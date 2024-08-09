@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS here */
+
+/* https://gwfh.mranftl.com/fonts/roboto?subsets=latin */
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets./fonts./roboto-v32-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets./fonts./roboto-v32-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --main-primary-color: #212121;
+  --main-text-color: #595959;
+  --main-white-color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.primary-font {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.27em;
+}
+
+.secondary-font {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.35em;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67em;
+}
+
+.smalltext {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+a {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.35em;
+  color: var(--main-primary-color);
+  text-decoration: none;
+  display: block;
+}
+
+p {
+  color: var(--main-primary-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0px 30px;
+  margin: 0px auto;
+}
+
+.button--primary {
+  padding: 12px 41px;
+  border-radius: 25px;
+  border: 2px solid var(--main-primary-color);
+  background-color: var(--main-primary-color);
+  color: var(--main-white-color);
+}
+
+.button--secondary {
+  padding: 11px 33px;
+  border-radius: 25px;
+  border: 2px solid var(--main-primary-color);
+}
+
+h1,
+.hero-description {
+  max-width: 543px;
+}
+
+/* Nav */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#nav-wrapper {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+/* Section */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-img {
+  width: 50%;
+  text-align: right;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 567px;
+}
+
+#map {
+  max-width: 453px;
+  margin-bottom: 50px;
+}
+
+.hero-description {
+  margin: 25px 0px 45px 0px;
+}
+
+#hero-cta {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+#hero-people {
+  margin-top: 70px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+footer > div {
+  display: flex;
+  gap: 40px;
+}
